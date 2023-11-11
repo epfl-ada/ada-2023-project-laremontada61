@@ -2,8 +2,16 @@
 ada-2023-project-laremontada61 created by GitHub Classroom
 
 # Research questions
-- What's the repartition of breweries in the world ?
-- What's the best brewery in the world ?
-- What's the best beer in the world ? Rankings by styles ?
-- How can I find the best suited beer to my taste ?
-- What are the factors that might influence the ratings ?
+- How to make ranking system more fair with sentiment analysis ?
+- Which external factors influence the most the ranking system (political data, temporal data, economic data) ?
+- From all that, what is the best brewery in the world ?
+
+# EDA
+- EDA on USA only
+- EDA on numerical ratings
+- EDA on textual reviews
+
+For each EDA, plot ditributions/print descriptive statistics:
+- in general
+- per brewery
+- per style of beer
