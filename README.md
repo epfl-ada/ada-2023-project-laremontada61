@@ -1,7 +1,7 @@
 # 🍻 Crafting a striking beer rating system to find the world's best brewery
 
 ### 💻 Requirements & General informations
-Although all of our notebooks are pre-runed, we would recommand you to create a `virtual environment` to load all the necessary libraries.
+Although all of our notebooks are pre-runed, we would recommend you to create a `virtual environment` to load all the necessary libraries.
 
 The Dataset that will be used in the frame of this project is too large to be stored on GitHub. Therefore we created a [Google Drive](https://drive.google.com/file/d/1wIIfhQDdF5lH42bKQ3pLoStu_Wem2rGE/view?usp=drive_link) where the original Dataset is present as well as our pre-processed `.zip` files.
 
