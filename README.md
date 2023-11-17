@@ -1,7 +1,9 @@
 # 🍻 Crafting a striking beer rating system to find the world's best brewery
 
-### 💻 Requirements
+### 💻 Requirements & General informations
 Although all of our notebooks are pre-runed, we would recommand you to create a `virtual environment` to load all the necessary libraries.
+
+The Dataset that will be used in the frame of this project is too large to be stored on GitHub. Therefore we created a [Google Drive]() where the original Dataset is present as well as out pre-processed `.zip` files.
 
 ### 📖 Abstract
 In the wide world of hops, cereals and aperitifs with friends, LaRemontADA is on a quest towards making a beer rating system combining the precision of figures and the richness of prose.
@@ -22,27 +24,29 @@ Firstly, correct the ratings based on the reviews is our first goal, we will use
 
 Secondly using our newly developepd rating method, we would like to give a visual representation of the variability in the ranking of the best beers according to geographical area or season. In order to do this, we will use data aggregation methods along side with statistical studies on the ratings to extract significant variability.
 
-### ⏳ Timeline
+This method is subdivided and integrated to a full timeline hereafter.
+
+### ⏳ Timeline (dynamic)
 **Done for P2 (17/11/23):**
-- add
-- add
+- Beginning to Week 9:
+  - Pre-processing: Subdivided original .tar.gz files into smaller one to be able to load them into dataframes. A sampling of the resulting df was necessary due to their size. Size was reduced by randomly selecting element from them.
+  - Exploratory Data Analysis `milestone_P2.ipynb`:
+    - Initial Data Exploration: Getting hands on the data, geometrical features extraction (size, number of features, missing data...)
+    - Statistical analysis: Study of the distribution of the numerical values, correlations between features.
+    - Textual reviews distribution: Analysis of the words' distribution in the both websites with count of the most used words and expressions before and after a processing on all the sentences
+    - Sentiment Analysis: Analysis of the sentiment polarity in the different review texts and the comments' subjectivity to have a better understanding of the influence of some ratings
 
 **To be done for P3 (from 18/11/23 to 22/12/23):** 
 - Week 10:
-  - add
-  - add
+  - Milestone: identify extreme users with their high polarity comments and find a fair way to ponderate their ratings.
 - Week 11:
-  - add
-  - add
+  - Milestone: Check adjectives used to describe best beers of each season or each geographic areas to be able to propose other beers in function of the parameters with the same adjectives.
 - Week 12:
-  - add
-  - add
+  - To be determined
 - Week 13:
-  - add
-  - add
+  - To be determined
 - Week 14:
-  - add
-  - add
+  - Documentation: Full documentation of the pipeline & edition of the website.
 
 #### 🤝 Team organization (To be re-specified after P2)
 | Member        | Task          |
