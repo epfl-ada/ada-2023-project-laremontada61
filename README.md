@@ -9,7 +9,8 @@ The Dataset that will be used in the frame of this project is too large to be st
 In the wide world of hops, cereals and aperitifs with friends, LaRemontADA is on a quest towards making a beer rating system combining the precision of figures and the richness of prose.
 
 Using the [BeerReviews](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF?usp=sharing) dataset that contains a variety of beer ratings from 2 different websites together with sentiment analysis tools, our goal is to enhance the already existing rating system to be able to determine the world's best beer. This determination is based on a detailed analysis of the existing ratings throughout the world and across time.
-Everyting done in the aim of creating the fairest ranking system with the different users' opinion to be more robust than just a purely numerical system.
+
+Everyting is done in the aim of creating the fairest ranking system with the different users' opinion to be more robust than just a purely numerical system.
 
 ### ❓ Research questions
 During this work, we will give an answer to those questions:
