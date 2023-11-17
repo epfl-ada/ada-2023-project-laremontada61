@@ -8,7 +8,7 @@ The Dataset that will be used in the frame of this project is too large to be st
 ### 📖 Abstract
 In the wide world of hops, cereals and aperitifs with friends, LaRemontADA is on a quest towards making a beer rating system combining the precision of figures and the richness of prose.
 
-Using the [BeerReviews]() dataset that contains a variety of beer ratings from 2 different websites together with sentiment analysis tools, out goal is to enhance the already existing rating system to be able to determine the world's best beer. This determination is based on a detailed analysis of the existing ratings throughout the world and across time.
+Using the [BeerReviews](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF?usp=sharing) dataset that contains a variety of beer ratings from 2 different websites together with sentiment analysis tools, out goal is to enhance the already existing rating system to be able to determine the world's best beer. This determination is based on a detailed analysis of the existing ratings throughout the world and across time.
 
 ### ❓ Research questions
 During this work, we will give an answer to those questions:
@@ -26,7 +26,7 @@ Secondly using our newly developepd rating method, we would like to give a visua
 
 This method is subdivided and integrated to a full timeline hereafter.
 
-### ⏳ Timeline (dynamic)
+### ⏳ Timeline (Dynamic)
 **Done for P2 (17/11/23):**
 - Beginning to Week 9:
   - Pre-processing: Subdivided original .tar.gz files into smaller one to be able to load them into dataframes. A sampling of the resulting df was necessary due to their size. Size was reduced by randomly selecting element from them.
