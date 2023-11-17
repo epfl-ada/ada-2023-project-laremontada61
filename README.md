@@ -3,7 +3,7 @@
 ### 💻 Requirements & General informations
 Although all of our notebooks are pre-runed, we would recommand you to create a `virtual environment` to load all the necessary libraries.
 
-The Dataset that will be used in the frame of this project is too large to be stored on GitHub. Therefore we created a [Google Drive]() where the original Dataset is present as well as out pre-processed `.zip` files.
+The Dataset that will be used in the frame of this project is too large to be stored on GitHub. Therefore we created a [Google Drive](https://drive.google.com/file/d/1wIIfhQDdF5lH42bKQ3pLoStu_Wem2rGE/view?usp=drive_link) where the original Dataset is present as well as out pre-processed `.zip` files.
 
 ### 📖 Abstract
 In the wide world of hops, cereals and aperitifs with friends, LaRemontADA is on a quest towards making a beer rating system combining the precision of figures and the richness of prose.
