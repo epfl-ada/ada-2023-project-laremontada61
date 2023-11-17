@@ -3,12 +3,12 @@
 ### 💻 Requirements & General informations
 Although all of our notebooks are pre-runed, we would recommand you to create a `virtual environment` to load all the necessary libraries.
 
-The Dataset that will be used in the frame of this project is too large to be stored on GitHub. Therefore we created a [Google Drive](https://drive.google.com/file/d/1wIIfhQDdF5lH42bKQ3pLoStu_Wem2rGE/view?usp=drive_link) where the original Dataset is present as well as out pre-processed `.zip` files.
+The Dataset that will be used in the frame of this project is too large to be stored on GitHub. Therefore we created a [Google Drive](https://drive.google.com/file/d/1wIIfhQDdF5lH42bKQ3pLoStu_Wem2rGE/view?usp=drive_link) where the original Dataset is present as well as our pre-processed `.zip` files.
 
 ### 📖 Abstract
 In the wide world of hops, cereals and aperitifs with friends, LaRemontADA is on a quest towards making a beer rating system combining the precision of figures and the richness of prose.
 
-Using the [BeerReviews](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF?usp=sharing) dataset that contains a variety of beer ratings from 2 different websites together with sentiment analysis tools, out goal is to enhance the already existing rating system to be able to determine the world's best beer. This determination is based on a detailed analysis of the existing ratings throughout the world and across time.
+Using the [BeerReviews](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF?usp=sharing) dataset that contains a variety of beer ratings from 2 different websites together with sentiment analysis tools, our goal is to enhance the already existing rating system to be able to determine the world's best beer. This determination is based on a detailed analysis of the existing ratings throughout the world and across time.
 
 ### ❓ Research questions
 During this work, we will give an answer to those questions:
