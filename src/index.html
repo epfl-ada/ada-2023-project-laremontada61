@@ -2,7 +2,7 @@
 <html>
    <style> @import url('https://fonts.cdnfonts.com/css/sensa-brush'); </style>
    <head>
-      <title>Data Divas COM-480 Data Visualization Project</title>
+      <title>RemontADA - Home page</title>
       <script src="https://d3js.org/d3.v4.min.js"></script>
       <script> d3v3 = d3; </script>
       <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
@@ -35,7 +35,7 @@
          crossorigin="anonymous"
          />
       <link rel="stylesheet" href="style.css" />
-      <script src="https://unpkg.com/globe.gl"></script> <!-- To get the globe.gl visu -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
    </head>
    <div class="navigation_bar">
       <a class="active" href="index.html">Home</a>
@@ -44,8 +44,30 @@
    </div>
    <br>
    <body>
-      <h1>An interactive journey through greenhouse gas emissions</h1>
-      <div class="main-screen">
+      <h1>Beer reviews data Analysis</h1>
+      <!-- Container for the picture -->
+      <div class="parent-container">
+         <!-- Container for the picture -->
+         <div class="picture-container">
+             <img src="data/imgs/logos.png" alt="Description of the image">
+         </div>
+     
+         <!-- Container for the description -->
+         <div class="description-container">
+            <h2>
+               Website description
+            </h2>
+             <p>Blablabla introduction des deux sites</p>
+         </div>
+     </div>
+      <script src="map.js"></script>
+      <script src="barplots.js"></script>
+      <script src="ghg_counter.js"></script>
+   </body>
+</html>
+
+
+<!-- <div class="main-screen">
          <div class="map_title">
             <h2>Worldmap of the annual greenhouse gas emissions per country, in tons of CO<sub>2</sub>-equivalent</h2>
          </div>
@@ -63,113 +85,4 @@
                <div id="current_year">Year 2019</div>
             </div>
          </div>
-      </div>
-      <div class="counter" id="ghg_counter"></div>
-      <div class="block-help">
-         <div class="help-co2e">
-            <div class="icon">
-               <img src="data/lumiere.png" alt="lightbulb" width="30" height="30">
-            </div>
-            <div>
-               <div class="help-title">What are carbon dioxide (CO<sub>2</sub>) equivalents?</div>
-               <div class="help-content">
-                  <p>Various greenhouse gases have very different warming effects. CO<sub>2</sub> equivalent is used to attempt to convert the warming impact of total greenhouse gases in a single metric.
-                     <br>This is achieved by multiplying each gas emissions by the amount of warming one tonne of this gas would create relative to one tonne of CO<sub>2</sub> over a 100-year timescale.
-                  </p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="modal" id="modal" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="modal-title">Modal title</h5>
-                  <button
-                     type="button"
-                     class="launch-456"
-                     data-dismiss="modal"
-                     aria-label="Close"
-                     onclick="$('#modal').modal('hide')"
-                     >
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-               <div class="modal-body">
-                  <p style="text-align: center; font-weight: bold; color: black">
-                     Greenhouse gas emissions by sector
-                  </p>
-                  <div id="sectors_chart"> </div>
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="launch-456" onclick="$('#modal2').modal('show') ; $('#modal').modal('hide')" data-dismiss="modal">Next -></button>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="modal" id="modal2" tabindex="-1" role="dialog" aria-hidden="true">
-         <div class="modal-dialog" role="document">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <h5 class="modal-title" id="modal2-title">Modal title</h5>
-                  <button
-                     type="button"
-                     class="launch-456"
-                     data-dismiss="modal2"
-                     aria-label="Close"
-                     onclick="$('#modal2').modal('hide')"
-                     >
-                  <span aria-hidden="true">&times;</span>
-                  </button>
-               </div>
-               <div class="modal-body">
-                  <p style="text-align: center; font-weight: bold; color: black">
-                     Gases proportion
-                  </p>
-                  <div id="gases_chart"> </div>
-                  <div class="block-help">
-                     <div class="help-gas">
-                        <div class="icon">
-                           <img src="data/lumiere.png" alt="lightbulb" width="30" height="30">
-                        </div>
-                        <div>
-                           <div class="help-title">Where do these gases come from?</div>
-                           <div class="help-content">
-                              - Carbon dioxide (CO<sub>2</sub>) is emitted when fossil fuels, solid waste, trees and other biological materials burn. It is also the result of chemical reactions like cement production.
-                              <br><br>- Methane (CH<sub>4</sub>) emissions occur during the production and transport of coal, natural gas and oil. They also occur with agriculture, land use and the decay of organic waste.
-                              <br><br>- Nitrous oxide (N<sub>2</sub>O) emissions are due to agricultural, land use and industrial activities and to treating wastewater.
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="modal-footer">
-                  <button type="button" class="launch-456" onclick="$('#modal2').modal('hide') ; $('#modal').modal('show')" data-dismiss="modal"><- Previous</button>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div id="globeViz"></div>
-      <script>
-         const globe = new Globe()
-           .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
-                               // replace with your data
-           .pointLat('lat')    // replace with your latitude property
-           .pointLng('lng')    // replace with your longitude property
-           .pointColor('color') // replace with your color property
-           .pointAltitude('size') // replace with your size property
-           .pointRadius('size'); // replace with your size property
-         
-         document.getElementById('globeViz').appendChild(globe);
-         </script>
-      <style>
-         #globeViz {
-           width: 100%;
-           height: 600px;
-         }
-         </style>
-      <script src="map.js"></script>
-      <script src="barplots.js"></script>
-      <script src="ghg_counter.js"></script>
-   </body>
-</html>
+      </div> -->
