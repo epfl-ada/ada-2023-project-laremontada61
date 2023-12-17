@@ -13,3 +13,11 @@ lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor inc
 # Globe vizualization 🌍
 <br>
 <iframe src="assets/html/map_classic.html" width="750px" height="530px" frameborder="0" position="relative" style="border-radius: 20px;">Globe</iframe>
+
+# Polarity map
+bonsoir jzdheghdzj
+<iframe src="assets/plot/link_subjectivity_polarity.html" width="750px" height="530px" frameborder="0" position="relative">subjectivity_polarity</iframe>
+<br>
+<iframe src="assets/plot/link_subjectivity_polarity_positive.html" width="750px" height="530px" frameborder="0" position="relative">subjectivity_polarity_positive</iframe>
+<br>
+<iframe src="assets/plot/link_subjectivity_polarity_negative.html" width="750px" height="530px" frameborder="0" position="relative">subjectivity_polarity_negative</iframe>
