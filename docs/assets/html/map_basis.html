@@ -1,0 +1,58 @@
+<head>
+  <style> body { margin: 0; } </style>
+
+  <script src="//unpkg.com/d3"></script>
+
+  <script src="//unpkg.com/globe.gl"></script>
+  <!--<script src="../../dist/globe.gl.js"></script>-->
+</head>
+
+<body>
+  <div id="globeViz"></div>
+  <script>
+    const colorScale = d3.scaleSequentialSqrt(d3.interpolateYlOrRd);
+
+    // GDP per capita (avoiding countries with small pop)
+    const getVal = feat => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
+
+    async function loadGlobe() {
+        const response = await fetch('../json/geo_with_breweries.json');
+        const countries = await response.json();
+
+        const maxVal = Math.max(...countries.features.map(getVal));
+        colorScale.domain([0, maxVal]);
+
+        const world = Globe()
+            .globeImageUrl('//unpkg.com/three-globe/example/img/earth-day.jpg')
+            .backgroundColor('#FFFFFF')
+            .lineHoverPrecision(0)
+            .polygonsData(countries.features.filter(d => d.properties.ISO_A2 !== 'AQ'))
+            .polygonAltitude(d => d.properties.GRADE ? 0.01 : 0.01)
+            .polygonCapColor(feat => feat.properties.COLOR ? feat.properties.COLOR : 'gray')
+            .polygonSideColor(feat => feat.properties.COLOR ? feat.properties.COLOR : 'gray')
+            .polygonStrokeColor(() => '#111')
+            .polygonLabel(({ properties: d }) => `
+                ${d.COLOR ? `<div style="background-color: ${d.COLOR}; border-radius: 10px; padding: 10px;">` : `<div style="background-color: gray; border-radius: 10px; width: 100%; padding: 10px;">`}
+                <b>${d.ADMIN} (${d.ISO_A2}):</b> <br />
+                ${d.GRADE ? `Normalized score: <i>${d.GRADE}</i><br/>` : ''}
+                ${d.BEST_BREWERY ? `Best brewery: <i>${d.BEST_BREWERY}</i>` : 'No data available'}
+              </div>
+            `)
+            .onPolygonHover(hoverD => world
+              .polygonAltitude(d => d === hoverD && d.properties.COLOR ? 0.15 : 0.01)
+              .polygonCapColor(feat => feat.properties.COLOR)
+            )
+            .polygonsTransitionDuration(300)
+        (document.getElementById('globeViz'));
+
+        return world;
+    }
+
+    loadGlobe().then(world => {
+        // Now you can use the world variable here
+        world.controls().autoRotate = true;
+        world.controls().autoRotateSpeed = -0.5;
+        world.pointOfView({ lat: 35, lng: 0, altitude: 2.5 }, [2.5]);
+    });
+</script>
+</body>

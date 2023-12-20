@@ -1,0 +1,59 @@
+brewery_name,new_rating,brewery_location,final_grade,colormap
+Brasserie de Rochefort,0.8677737901817371,Belgium,1.0,#67000d
+AleSmith Brewing Company,0.7181506182764462,United States,0.929,#8a0812
+Cloudwater Brew Co.,0.682508766779688,England,0.912,#920a13
+Klosterbrauerei Andechs,0.6814584957103227,Germany,0.912,#920a13
+Brekeriet,0.6562935825003583,Sweden,0.9,#980c13
+Cervejaria Colorado,0.647520923173434,Brazil,0.896,#9a0c14
+Driftwood Brewery,0.631866557476292,Canada,0.888,#9d0d14
+Ølfabrikken,0.6089051900206146,Denmark,0.877,#a30f15
+Traquair House Brewery Lld,0.5613551428871296,Scotland,0.855,#ab1016
+Panil,0.5564679493761477,Italy,0.852,#ab1016
+Kyoto Brewing Company,0.4599766196324877,Japan,0.807,#b91419
+Bierbrouwerij De Koningshoeven B.V.,0.41666511984985716,Netherlands,0.786,#bf151b
+Brauerei Schloss Eggenberg,0.3822353564871687,Austria,0.77,#c4161c
+Guinness Nigeria,0.3803270926993992,Nigeria,0.769,#c5171c
+Feral Brewing Co.,0.3302495915405889,Australia,0.745,#cc191e
+BFM (Brasserie des Franches-Montagnes),0.31462928579584465,Switzerland,0.738,#cf1c1f
+Ölvisholt Brugghús,0.2992042433581987,Iceland,0.731,#d01d1f
+Especialidades Cerveceras (FEMSA),0.23719773167230826,Mexico,0.701,#d92523
+Ceylon / Lion Brewery Limited,0.23507443391849978,Sri Lanka,0.7,#d92523
+Hop Hooligans,0.18076398130796167,Romania,0.674,#e12d26
+"Budějovický Budvar, n.p.",0.15629490045794728,Czech Republic,0.663,#e43027
+Zmajska Pivovara,0.15518707693864875,Croatia,0.662,#e43027
+8 Wired Brewing Co.,0.11627942292858709,New Zealand,0.644,#ea362a
+Felinfoel Brewery Co.,0.09045896789620778,Wales,0.632,#ed392b
+Moskovskaya Pivovarennaya Kompaniya,0.08714617965152825,Russia,0.63,#ed392b
+Hopfanatic Brewery,0.08621421684734959,Hungary,0.63,#ed392b
+Naparbier Sdad. Coop.,0.08182870364868981,Spain,0.628,#ee3a2c
+Boundary,0.06301246860570517,Northern Ireland,0.619,#f03d2d
+Ægir Bryggeri,-0.010587594229842743,Norway,0.584,#f34a36
+Boxing Cat Brewery (AB InBev),-0.01525824992912013,China,0.581,#f34c37
+Põhjala Brewery,-0.03712123734837228,Estonia,0.571,#f44f39
+Dois Corvos Cervejeira,-0.07199805784066465,Portugal,0.555,#f6553c
+Sakikių alus,-0.1365408614270167,Lithuania,0.524,#f96044
+Pravda Beer Theatre,-0.14888984676162056,Ukraine,0.518,#f96346
+Harar Brewery (Heineken),-0.21241365821309002,Ethiopia,0.488,#fb6e4e
+Brewerkz,-0.21772531220171792,Singapore,0.486,#fb6e4e
+Brasserie Duyck,-0.31973538107155985,France,0.437,#fc7f5f
+Cerveceria La Constancia S.A. / BevCo Ltd,-0.41404063737268887,El Salvador,0.392,#fc8d6d
+Cervecería Nacional Dominicana,-0.4360732351552723,Dominican Republic,0.382,#fc9070
+Lao Brewery Co.,-0.4967003095369209,Laos,0.353,#fc997a
+Hite Brewery Company LTD,-0.5294794644832542,South Korea,0.338,#fc9e80
+Cervecería y Maltería Quilmes / Grupo Bemberg,-0.5386489586065958,Argentina,0.333,#fca082
+VBL Tien Giang Limited (Fosters),-0.5454177662452728,Vietnam,0.33,#fca183
+South African Breweries plc,-0.5663168190083605,South Africa,0.32,#fca588
+Anadolu Efes Brewery,-0.6066156120374243,Turkey,0.301,#fcaa8d
+United Breweries - UB Group,-0.6323363393010709,India,0.289,#fcaf93
+Athenian Brewery,-0.6615953250048556,Greece,0.275,#fcb398
+Cayman Islands Brewery Ltd.,-0.6719167573467096,Cayman Islands,0.27,#fcb499
+Carib Brewery Limited,-0.7918347416949073,Trinidad & Tobago,0.213,#fdc6b0
+Trebjesa (MolsonCoors),-0.8029877942353225,Montenegro,0.208,#fdc7b2
+Pivovarna Zagorka (Heineken),-0.8673509890096537,Bulgaria,0.178,#fdd1be
+Cerveceria Hondureña (SABMiller),-0.9498490830970545,Honduras,0.139,#fedccd
+Pt. Multi Bintang (Heineken),-0.9932396399265788,Indonesia,0.118,#fee1d4
+Simonds Farsons Cisk Plc.,-1.013381556315894,Malta,0.108,#fee3d7
+KEO,-1.0413290474105061,Cyprus,0.095,#fee5d9
+Société des Brasseries du Maroc (Heineken),-1.159336418978032,Morocco,0.039,#ffefe8
+Compañía Cervecera de Puerto Rico,-1.2276482221914347,Puerto Rico,0.007,#fff4ef
+Brasserie de Tahiti S.A.,-1.2421857966718346,French Polynesia,0.0,#fff5f0
