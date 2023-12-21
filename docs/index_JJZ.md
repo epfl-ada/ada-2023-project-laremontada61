@@ -25,7 +25,13 @@ Before incorporating textual reviews for different beers into the ranking system
 
 CALCUL PEARSON CORRELATION
 
-Based on our findings, the correlation between polarity and numerical ratings appears to be relatively weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews and numerical ratings are crucial for defining the most accurate ranking. Consequently, we plan to devise a formulation where equal importance is attributed to both these features.
+Based on our results, the correlation between polarity and numerical ratings appears to be relatively weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews and numerical ratings are crucial for defining the most accurate ranking. Consequently, we plan to devise a formulation where equal importance is attributed to both these features.
+
+
+
+# The real best breweries in the world, based on an innovative NLP-augmented ranking system
+
+
 
 ## Polarity map
 bonsoir jzdheghdzj
