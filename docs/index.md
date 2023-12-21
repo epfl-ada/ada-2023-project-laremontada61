@@ -59,9 +59,17 @@ Commentary on evolution
 # Is there a link for reviews' subjectivity with their polarity and their numerical ratings?
 We aim to examine the correlation between numerical ratings and subjectivity, as well as between polarity and subjectivity. Our hypothesis is rooted in the intuition that extreme subjectivity tends to yield extreme reviews or ratings. To refine our ranking system effectively, it's essential to assign more weight to objective opinions, ensuring a more equitable and balanced system.
 
-PLOTS CCT
+<iframe src="assets/plot/Subjectivity_for_extreme_ratings.html" width="750px" height="530px" frameborder="0" position="relative">Means</iframe> 
 
-CONCLUSION BOXPLOTS
+<iframe src="assets/plot/Subjectivity_for_extreme_polarities.html" width="750px" height="530px" frameborder="0" position="relative">Means</iframe>
+
+The above plots show the box plots for the subjectivity of all the reviews (in blue), against the distribution of subjectivity for reviews with extreme polarities/ratings (for positive reviews (in green) the distribution of subjectivity for reviews with a polarity/rating above the computed maximum and for negative reviews (in red) below the computed min).
+
+The extent of the overlap of the boxplots gives a first glimpse of the degree of similarity between the distributions. To check if the difference is statistically significant, as the distribution is not normally distributed a non-parametric test such as the Mann-Whitney U test is more suited.
+
+## Subjectivity for extreme ratings
+
+## Subjectivity for extreme polarities
 
 Before incorporating textual reviews for different beers into the ranking system, it's crucial to check if the sentiment polarity from these reviews correlates with numerical ratings. By understanding this relationship, we aim to enhance our ranking mechanism. To delve deeper into this association, we aligned the two features and conducted a thorough correlation analysis.
 
