@@ -1,6 +1,9 @@
 ---
 layout: page
-title: Brewing a fair beer rating system 🍻
+title: Crafting a NLP-Augmented beer rating system 🍻
+cover-img: /assets/img/bar_head.png
+thumbnail-img: /assets/img/bar_head.png
+share-img: /assets/img/bar_head.png
 ---
 
 # Context
