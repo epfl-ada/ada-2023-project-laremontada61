@@ -30,7 +30,7 @@ Based on our results, the correlation between polarity and numerical ratings app
 
 
 # The real best breweries in the world, based on an innovative NLP-augmented ranking system
-
+## Principle of the NLP-augmented ranking system
 
 
 ## Polarity map
