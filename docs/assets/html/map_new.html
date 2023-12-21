@@ -17,7 +17,7 @@
     const getVal = feat => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
 
     async function loadGlobe() {
-        const response = await fetch('../json/geo_with_breweries_new.json');
+        const response = await fetch('../json/geo_with_breweries_new_all.json');
         const countries = await response.json();
 
         const maxVal = Math.max(...countries.features.map(getVal));
