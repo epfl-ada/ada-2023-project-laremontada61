@@ -2,6 +2,40 @@
 
 ### 💻 Requirements & General informations
 Although all of our notebooks are pre-runed, we would recommend you to create a `virtual environment` to load all the necessary libraries.
+\
+You can install the required libraries using the following command:
+\
+Run the following command to create a conda virtual environment:
+```bash
+conda create --name LaRemontADA61 python=3.9
+conda activate LaRemontADA61   
+```
+
+Head to the folder you want to contain this GitHub repository:
+```bash
+cd my/folder/path
+```
+
+Clone this GitHub repository:
+```bash
+git clone https://github.com/epfl-ada/ada-2023-project-laremontada61/
+```
+
+Move into the cloned repo:
+```bash
+cd ada-2023-project-laremontada61/
+```
+
+If you are using MacOS with an arm64 architecture run:
+```bash
+pip install -r requirements_arm64.txt
+```
+
+If you are using Windows with a Nvidia GPU run:
+
+```bash
+pip install -r requirements_x86.txt
+```
 
 The Dataset that will be used in the frame of this project is too large to be stored on GitHub. Therefore we created a [Google Drive](https://drive.google.com/file/d/1wIIfhQDdF5lH42bKQ3pLoStu_Wem2rGE/view?usp=drive_link) where the original Dataset is present as well as our pre-processed `.zip` files.
 
@@ -13,7 +47,7 @@ Using the [BeerReviews](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-4
 Everyting is done in the aim of creating the fairest ranking system with the different users' opinion to be more robust than just a purely numerical system.
 
 ### 🌐 Website (in building)
-The website can be found [here](https://epfl-ada.github.io/ada-2023-project-laremontada61/src).
+The website can be found [here](https://epfl-ada.github.io/ada-2023-project-laremontada61/).
 
 ### ❓ Research questions
 During this work, we will give an answer to those questions:
