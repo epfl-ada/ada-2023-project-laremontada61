@@ -24,22 +24,19 @@ Firstly, we associate each brewery with its corresponding beers. This gives us a
 
 Plot distribution 
 
-
 We have now filtered our breweries to keep only those with more than 30 reviews, let’s rank them! The first system is a weighted ranking, when we calculate the average score for a brewery from the scores obtained by its beers, we weight the importance of each beer by the number of reviews it has received. This rating system isn’t sensitive to beers with few reviews, which is why we have kept all the brewery's beers each time. Using this rating system, we have produced two rankings. 
 
-This first ranking corresponds to the 10 best breweries of all time according to thsi ranking system.
+This first ranking corresponds to the 10 best breweries of all time according to this ranking system.
 
 Plot top 10 weight ranking
 
-We would also like to visualize this ranking by year by calculating the  top 10 for each year. This is shown in the visual.
+We would also like to visualize this ranking by year by calculating the top 10 for each year. This is shown in the visual.
 
 Plot top 10 across years weighted 
 
 However, this classification method can be questioned in the way it weights its beers. Let's imagine a brewery that produces a very popular beer, which is highly consumed and rated, and which also gets very good ratings. On the other hand, this brewery produces other beers that are not as good, and which are therefore rated less highly and drunk less. With the first rating system, this brewery will be judged as very good, but is it really so, knowing that only one of its beers can be considered good? We believe that a brewery can also be assessed on the average quality of its beers without taking into account whether or not they are popular. This classification is possible thanks to the second system. 
 
-
 From now on, a brewery's average rating will not be obtained by weighting the importance of its beers by the number of reviews they have received. This ranking therefore reflects the quality of the brewery's range of beers. However, this ranking is very sensitive to beers with fewer reviews, as we don't want a beer with just one review to have a strong influence on the brewery's average, we filtered the beers to keep only those with more than 5 reviews. Similar to the first system, we have produced an overall ranking. Here are the results of this general ranking for the two rating systems. We can see that the ranking has changed significantly (describe the changes)
-
 
 Plot compare ranking
 
@@ -54,9 +51,9 @@ We have our champions, _,_,_ corresponds to our 3 best breweries for the first r
 Plot evolution
 
 Commentary on evolution 
+# How to take into account the sentiment in the textual reviews ?
 
-
-# Is there a link for reviews' subjectivity with their polarity and their numerical ratings?
+## Is there a link for reviews' subjectivity with their polarity and their numerical ratings?
 We aim to examine the correlation between numerical ratings and subjectivity, as well as between polarity and subjectivity. Our hypothesis is rooted in the intuition that extreme subjectivity tends to yield extreme reviews or ratings. To refine our ranking system effectively, it's essential to assign more weight to objective opinions, ensuring a more equitable and balanced system.
 
 <iframe src="assets/plot/Subjectivity_for_extreme_ratings.html" width="750px" height="530px" frameborder="0" position="relative">Means</iframe> 
@@ -77,12 +74,9 @@ CALCUL PEARSON CORRELATION
 
 Based on our findings, the correlation between polarity and numerical ratings appears to be relatively weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews, with the sentiment analysis, and numerical ratings are crucial for defining the most accurate ranking. Consequently, we plan to devise a formulation where equal importance is attributed to both these features.
 
-# Sentiment analysis
+# Which are the best breweries in the world ?
 
-
-
-
-## Polarity map
+# Conclusion
 
 # Globe vizualization 🌍
 <br>
