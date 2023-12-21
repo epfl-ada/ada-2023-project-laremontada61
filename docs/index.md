@@ -83,12 +83,6 @@ Based on our findings, the correlation between polarity and numerical ratings ap
 
 
 ## Polarity map
-bonsoir jzdheghdzj
-<iframe src="assets/plot/link_subjectivity_polarity.html" width="750px" height="530px" frameborder="0" position="relative">subjectivity_polarity</iframe>
-<br>
-<iframe src="assets/plot/link_subjectivity_polarity_positive.html" width="750px" height="530px" frameborder="0" position="relative">subjectivity_polarity_positive</iframe>
-<br>
-<iframe src="assets/plot/link_subjectivity_polarity_negative.html" width="750px" height="530px" frameborder="0" position="relative">subjectivity_polarity_negative</iframe>
 
 # Globe vizualization 🌍
 <br>
