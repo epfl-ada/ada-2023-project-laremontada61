@@ -1,4 +1,4 @@
-# 🍻 Crafting a striking beer rating system to find the world's best brewery
+# 🍻 Crafting the _NLP-Augmented_ beer rating system
 
 ### 💻 Requirements & General informations
 Although all of our notebooks are pre-runed, we would recommend you to create a `virtual environment` to load all the necessary libraries.
