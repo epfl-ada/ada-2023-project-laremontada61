@@ -57,7 +57,18 @@ Plot evolution
 Commentary on evolution 
 
 
+# Is there a link for reviews' subjectivity with their polarity and their numerical ratings?
+We aim to examine the correlation between numerical ratings and subjectivity, as well as between polarity and subjectivity. Our hypothesis is rooted in the intuition that extreme subjectivity tends to yield extreme reviews or ratings. To refine our ranking system effectively, it's essential to assign more weight to objective opinions, ensuring a more equitable and balanced system.
 
+PLOTS CCT
+
+CONCLUSION BOXPLOTS
+
+Before incorporating textual reviews for different beers into the ranking system, it's crucial to check if the sentiment polarity from these reviews correlates with numerical ratings. By understanding this relationship, we aim to enhance our ranking mechanism. To delve deeper into this association, we aligned the two features and conducted a thorough correlation analysis.
+
+CALCUL PEARSON CORRELATION
+
+Based on our findings, the correlation between polarity and numerical ratings appears to be relatively weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews and numerical ratings are crucial for defining the most accurate ranking. Consequently, we plan to devise a formulation where equal importance is attributed to both these features.
 
 # Sentiment analysis
 
