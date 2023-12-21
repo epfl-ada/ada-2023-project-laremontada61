@@ -298,14 +298,20 @@ In summary, the current approach of relying solely on numerical ratings and exte
 
 <iframe src="assets/plot/means.html" width="750px" height="530px" frameborder="0" position="relative">Means</iframe>
 
-<p>lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
 <h1 id="is-there-a-link-for-reviews-subjectivity-with-their-polarity-and-their-numerical-ratings">Is there a link for reviews’ subjectivity with their polarity and their numerical ratings?</h1>
-<p>We aim to examine the correlation between numerical ratings and subjectivity, as well as between polarity and subjectivity. Our hypothesis is rooted in the intuition that extreme subjectivity tends to yield extreme reviews or ratings. To refine our ranking system effectively, it’s essential to assign more weight to objective opinions, ensuring a more equitable and balanced system.</p>
+<p>We aim to examine the correlation between extreme numerical ratings and subjectivity, as well as between extreme polarity and subjectivity. Our hypothesis is rooted in the intuition that extreme subjectivity tends to yield extreme reviews or ratings. To refine our ranking system effectively, it’s essential to assign more weight to objective opinions, ensuring a more equitable and balanced system.</p>
 
-<p>PLOTS CCT</p>
+<iframe src="assets/plot/Subjectivity_for_extreme_ratings.html" width="750px" height="530px" frameborder="0" position="relative">Means</iframe>
 
-<p>CONCLUSION BOXPLOTS</p>
+<iframe src="assets/plot/Subjectivity_for_extreme_polarities.html" width="750px" height="530px" frameborder="0" position="relative">Means</iframe>
+
+<p>The above plots show the box plots for the subjectivity of all the reviews (in blue), against the distribution of subjectivity for reviews with extreme polarities/ratings (for positive reviews (in green) the distribution of subjectivity for reviews with a polarity/rating above the computed maximum and for negative reviews (in red) below the computed min).</p>
+
+<p>The extent of the overlap of the boxplots gives a first glimpse of the degree of similarity between the distributions. To check if the difference is statistically significant, as the distribution is not normally distributed a non-parametric test such as the Mann-Whitney U test is more suited.</p>
+
+<h2 id="subjectivity-for-extreme-ratings">Subjectivity for extreme ratings</h2>
+
+<h2 id="subjectivity-for-extreme-polarities">Subjectivity for extreme polarities</h2>
 
 <p>Before incorporating textual reviews for different beers into the ranking system, it’s crucial to check if the sentiment polarity from these reviews correlates with numerical ratings. By understanding this relationship, we aim to enhance our ranking mechanism. To delve deeper into this association, we aligned the two features and conducted a thorough correlation analysis.</p>
 
@@ -314,14 +320,7 @@ In summary, the current approach of relying solely on numerical ratings and exte
 <p>Based on our results, the correlation between polarity and numerical ratings appears to be relatively weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews and numerical ratings are crucial for defining the most accurate ranking. Consequently, we plan to devise a formulation where equal importance is attributed to both these features.</p>
 
 <h1 id="the-real-best-breweries-in-the-world-based-on-an-innovative-nlp-augmented-ranking-system">The real best breweries in the world, based on an innovative NLP-augmented ranking system</h1>
-
-<h2 id="polarity-map">Polarity map</h2>
-<p>bonsoir jzdheghdzj</p>
-<iframe src="assets/plot/link_subjectivity_polarity.html" width="750px" height="530px" frameborder="0" position="relative">subjectivity_polarity</iframe>
-<p><br /></p>
-<iframe src="assets/plot/link_subjectivity_polarity_positive.html" width="750px" height="530px" frameborder="0" position="relative">subjectivity_polarity_positive</iframe>
-<p><br /></p>
-<iframe src="assets/plot/link_subjectivity_polarity_negative.html" width="750px" height="530px" frameborder="0" position="relative">subjectivity_polarity_negative</iframe>
+<h2 id="principle-of-the-nlp-augmented-ranking-system">Principle of the NLP-augmented ranking system</h2>
 
 <h1 id="globe-vizualization-">Globe vizualization 🌍</h1>
 <p><br /></p>

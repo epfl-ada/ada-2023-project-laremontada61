@@ -17,7 +17,7 @@
     const getVal = feat => feat.properties.GDP_MD_EST / Math.max(1e5, feat.properties.POP_EST);
 
     async function loadGlobe() {
-        const response = await fetch('../json/geo_with_breweries_new_all.json');
+        const response = await fetch('../json/new_map.json');
         const countries = await response.json();
 
         const maxVal = Math.max(...countries.features.map(getVal));
@@ -33,8 +33,8 @@
             .polygonSideColor(feat => feat.properties.COLOR ? feat.properties.COLOR : 'gray')
             .polygonStrokeColor(() => '#111')
             .polygonLabel(({ properties: d }) => `
-                ${d.COLOR ? `<div style="background-color: ${d.COLOR}; border-radius: 10px; padding: 10px;">` : `<div style="background-color: gray; border-radius: 10px; width: 100%; padding: 10px;">`}
-                <b>${d.ADMIN} (${d.ISO_A2}):</b> <br />
+                ${d.COLOR ? `<div style="background-color: ${d.COLOR}; border-radius: 10px; padding: 10px; color: black;">` : `<div style="background-color: gray; border-radius: 10px; width: 100%; padding: 10px; color: black;">`}
+                <b>${d.NAME} (${d.ISO_A2}):</b> <br />
                 ${d.GRADE ? `Normalized score: <i>${d.GRADE}</i><br/>` : ''}
                 ${d.BEST_BREWERY ? `Best brewery: <i>${d.BEST_BREWERY}</i>` : 'No data available'}
               </div>
