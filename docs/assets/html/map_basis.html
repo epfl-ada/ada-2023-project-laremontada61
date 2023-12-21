@@ -33,7 +33,7 @@
             .polygonStrokeColor(() => '#111')
             .polygonLabel(({ properties: d }) => `
                 ${d.COLOR ? `<div style="background-color: ${d.COLOR}; border-radius: 10px; padding: 10px;">` : `<div style="background-color: gray; border-radius: 10px; width: 100%; padding: 10px;">`}
-                <b>${d.ADMIN} (${d.ISO_A2}):</b> <br />
+                <b>${d.NAME} (${d.ISO_A2}):</b> <br />
                 ${d.GRADE ? `Normalized score: <i>${d.GRADE}</i><br/>` : ''}
                 ${d.BEST_BREWERY ? `Best brewery: <i>${d.BEST_BREWERY}</i>` : 'No data available'}
               </div>
