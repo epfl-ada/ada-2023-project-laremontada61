@@ -24,13 +24,36 @@ During this work, we will give an answer to those questions:
 - From which brewery should I buy a drink tonight ?
 
 ### 🎯 Methods
-In order to answer the research question and get to our goal, you can read hereafter the proposed pipeline:
+In order to answer the research question formulated above and get to our goal, you can read hereafter the proposed pipeline:
 
-Firstly, correct the ratings based on the reviews is our first goal, we will use the textual reviews from each user to establish a profile of the user's scoring style. The profile will be defined according to its subjectivity, its hardness or the polarity of its opinion. With this data gathered for each user, we would like to correct via linear regression the numerical scores by, for example, reducing the weight of scores judged to be subjective or readjusting excessively harsh scores.
+#### 📊 Numerical ranking system - How to use the existong metrics ?
+The BeerReviews dataset consists of a large number of reviews. Each review formulated with a wide range of metrics that can be either numerical or textual. The first stepp focuses on the numerical features. With these various scalar ratings our goal is to create a ranking of the best breweries. Two different numerical brewery ranking systems were developped.
+The first on is a weighted average of the different rating metrics values.  To calculate this ranking only a portion of the beers and breweries that appear in the dataset are kept. This portion is statistically determined with a _Central Limit Theorem (CLT)_: the breweries that have less than `n=30` reviews are filtered since they cannot be considered statistically significant with respect to the _CTL_. By doing so, we are able to give more importance to the breweries that are rated more often, eventually leading to more significant. This ranking methods gave a first sample of results and is called the _Weighted Ranking Method_.
 
-Secondly using our newly developepd rating method, we would like to give a visual representation of the variability in the ranking of the best beers according to geographical area or season. In order to do this, we will use data aggregation methods along side with statistical studies on the ratings to extract significant variability.
+The second ranking method called _Quality Ranking Method (QRM)_ is obviously focused towards quality. QRM aims to address a potential limitation in the representation of brewery quality. In the first ranking, a brewery with a single highly-rated and widely-consumed beer could obtain a favorable rating, despite the possibility that its other beers may be less well-received. This method seeks to overcome this limitation by focusing solely on the quality of beers, irrespective of their popularity or quantity of reviews. In this approach, a brewery's ranking is calculated by averaging the ratings of its beers, with no consideration given to their frequency of review. However, to enhance statistical significance, beers with fewer than 4 reviews are excluded from the calculation. This ranking method provides a more nuanced assessment of brewery quality, placing emphasis on the overall quality of different beers within a brewery's portfolio rather than the sheer volume of reviews.
 
-This method is subdivided and integrated to a full timeline hereafter.
+#### 📝 Textual ranking system - How to use the textual reviews ?
+The initial rankings exclusively rely on quantitative numerical ratings, but recognizing the importance of textual reviews, we've embarked on a refinement journey by integrating sentiment analysis. In assessing comments, we assign a polarity score on a scale from -1 to 1, capturing the spectrum from very negative to very positive. It's pivotal to note the inherent subjectivity in individual ratings, expressed on a scale from 0 (objectivity) to 1 (high subjectivity).
+
+To foster fairness in our ranking system, we confront the challenge of subjective bias by introducing a weighting coefficient (1-subjectivity), ensuring that highly subjective opinions exert less influence on the ultimate ranking.
+
+Furthermore, we optimize our review process by standardizing polarity scores across all reviews, disregarding potential variations introduced by different websites or numerical ratings. This standardization, exemplified by individuals with similar sentiments receiving identical polarity ratings, brings coherence and consistency to our overarching ranking system.
+
+Summarily expressed in the formula:
+
+$$ final_rating=(initial_rating+polarity)×(1−subjectivity) $$
+
+The latest enhancement to this refined algorithm introduces a compensation factor 
+k
+k, harmonizing the correlation of final scores along the dimensions of standardized ratings and standardized polarity ratings. This factor is determined through the minimization of an objective function defined as the absolute difference in the Pearson correlation along these dimensions. The minimization process is facilitated by the scipy.optimize.minimize function.
+
+Thus, the ultimate formula becomes:
+
+$$ final_rating=(initial_rating+k×polarity)×(1−subjectivity) $$
+
+#### 📈 Visualization - So what ? What should I drink tonight ?
+The final step of our pipeline is to visualize the results of our ranking system. We've created a [datastory](https://epfl-ada.github.io/ada-2023-project-laremontada61/) that allows you to see all the results of the pipeline. If you are not interested in justifications, statistics and bar plots head straight to the bottom of the page to sea beautilful world maps with a world ranking. These maps are made from custon GeoJson files, and with the use of [globe.io](globe.io)
+
 
 ### ⏳ Timeline (Dynamic)
 **Done for P2 (17/11/23):**
