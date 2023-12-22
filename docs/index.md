@@ -98,7 +98,7 @@ According to our ranking system, the best breweries in the world elected by the 
 
 <img src="assets/img/ranking_breweries_Top3_resize.png" width="700px" height="600px">
 
-<iframe src="assets/plot/ranking_breweries_Top3.html" style="width:1280px; height:960px; border:0; transform: scale(0.5); transform-origin: 0 0;">Your browser does not support iframes.</iframe>
+<img src="assets/img/ranking_breweries_Top3.svg" width="700px" height="600px">
 
 If you want to try the beers available in these breweries check out this links :
 [Doggerlander Brewing Company](https://www.ratebeer.com/brewers/doggerlander-brewing-company/18423/)<br>
