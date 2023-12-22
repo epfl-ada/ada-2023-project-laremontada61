@@ -65,18 +65,23 @@ Commentary on evolution
 ## Is there a link for reviews' subjectivity with their polarity and their numerical ratings?
 We aim to examine the correlation between numerical ratings and subjectivity, as well as between polarity and subjectivity. Our hypothesis is rooted in the intuition that extreme subjectivity tends to yield extreme reviews or ratings. To refine our ranking system effectively, it's essential to assign more weight to objective opinions, ensuring a more equitable and balanced system.
 
+<iframe src="assets/img/Subjectivity_for_extreme_polarities.png" width="750px" height="420px" frameborder="0">Your browser does not support iframes.</iframe>
+
 <iframe src="assets/img/Subjectivity_for_extreme_ratings.png" width="750px" height="420px" frameborder="0">Your browser does not support iframes.</iframe>
 
-<iframe src="assets/img/Subjectivity_for_extreme_polarities.png" width="750px" height="420px" frameborder="0">Your browser does not support iframes.</iframe>
 
 The above plots show the box plots for the subjectivity of all the reviews (in blue), against the distribution of subjectivity for reviews with extreme polarities/ratings (for positive reviews (in green) the distribution of subjectivity for reviews with a polarity/rating above the computed maximum and for negative reviews (in red) below the computed min).
 
 The extent of the overlap of the boxplots gives a first glimpse of the degree of similarity between the distributions. To check if the difference is statistically significant, as the distribution is not normally distributed a non-parametric test such as the Mann-Whitney U test is more suited.
 
-## Subjectivity for extreme ratings
+#### Subjectivity for extreme polarities
+Here all the boxplots overlap so nothing can be said over the significance of the difference between the distribution of ratings for all the reviews and the extremly negative reviews. Furthermore, since the boxplot for positive reviews is not displayed it means that the maximum computed is higher than the actual values, hence no outliers are present for the polarity.
+When performing the Mann_Whitney U test, the p-value is equal to 0.0 so the difference might be significant. But the difference seems to be really small, so extreme negative polarities seems to have a subjectivity that might be acceptable
 
-## Subjectivity for extreme polarities
-
+#### Subjectivity for extreme ratings
+On the other hand there seems to be more link between subjectivity and extreme polarities. While the negative distribution follows the same pattern as for the polarities (with p-value of 3.04e-235) with a potential small significantly smaller median, the extremly positive reviews show some interesting result.
+In fact, with a p-value of 0 the distribution of subjectivity for positive reviews seems to be significantly different than all the reviews. So extremely positive reviews seems to be more subjective regarding the numerical rating, it seems that an enthousiastic reviewer would be more prone to overate a beer.
+It is thus important to take into account those textual reviews in order to weigh down those outliers.
 
 Before incorporating textual reviews for different beers into the ranking system, it's crucial to check if the sentiment polarity from these reviews correlates with numerical ratings. By understanding this relationship, we aim to enhance our ranking mechanism. To delve deeper into this association, we aligned the two features and conducted a Pearson's correlation analysis.
 
