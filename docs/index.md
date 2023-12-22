@@ -22,7 +22,7 @@ In our case, we're going to rank a very wide range of breweries, as more 202 cou
 
 To get a clearer picture, let's look at the number of breweries per country in the form of a histogram.
 
-<iframe src="assets/plot/reviews_world_histogram.html" width="900px" height="800px" frameborder="0">Your browser does not support iframes.</iframe>
+<iframe src="assets/plot/reviews_world_histogram.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
 We can easily see that geographical areas such as North America and Europe are strongly represented, as the 10 countries with the most repertiorised breweries are in these two areas. The great champion is unequivocally the United States, since more than 30% of the breweries in this ranking are American. But let's not bury the rest of the world too quickly: Brazil has more than 400 breweries ready to take on the world, and who knows, will "Les brasseries du Tchad" come out on top?
 
