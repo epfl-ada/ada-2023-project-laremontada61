@@ -103,9 +103,9 @@ According to our ranking system, the best breweries in the world elected by the 
 <iframe src="assets/plot/ranking_breweries_Top3.png" width="1300px" height="1000px" frameborder="0">Your browser does not support iframes.</iframe>
 
 If you want to try the beers available in these breweries check out this links :
-Doggerlander Brewing Company : [Visit their website](https://www.ratebeer.com/brewers/doggerlander-brewing-company/18423/)
-Abdij St. Sixtus - Westvleteren : [Visit their website](https://www.ratebeer.com/brewers/abdij-st-sixtus-westvleteren/623/)
-Neill & Ross : [Visit their website](https://www.ratebeer.com/brewers/neill-ross/13189/)
+[Doggerlander Brewing Company](https://www.ratebeer.com/brewers/doggerlander-brewing-company/18423/)<br>
+[Abdij St. Sixtus - Westvleteren](https://www.ratebeer.com/brewers/abdij-st-sixtus-westvleteren/623/)<br>
+[Neill & Ross](https://www.ratebeer.com/brewers/neill-ross/13189/)<br>
 
 So the best breweries around the world are the ones depicted in the podium. Drink their beers, you will not be disappointed if you are a beer lover!
 
