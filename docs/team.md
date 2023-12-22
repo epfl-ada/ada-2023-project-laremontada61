@@ -19,7 +19,7 @@ title: LaRemontADA61
             <br/><br/>
          </li>
          <li>
-            <img src="../assets/img/TCZ.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
+            <img src="../assets/img/TCZ_carre.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
             Tanguy CEDOZ, Data-analyst, Pre-processing.
             <a href="https://github.com/Tanguy-ced"><br>@Tanguy-ced</a>
             <br/><br/>
