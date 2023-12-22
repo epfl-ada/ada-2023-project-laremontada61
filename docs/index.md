@@ -12,25 +12,25 @@ The problem intensifies when certain products are either unfairly favored or dis
 In summary, the current approach of relying solely on numerical ratings and extensive textual reviews poses challenges for consumers in obtaining a clear and unbiased picture of a product.
 
 Understanding the fairness of ratings is crucial to ensure equity among products. Our aim is to create a fair beer rating system that can be applied to different rating systems. We'll explore how the subjective nature of reviews affects both the sentiment (polarity) and numerical ratings of beers, revealing genuine differences in diverse reviews. This investigation will use thorough statistical tests. The result will be a new ranking system that combines written reviews and numerical ratings, offering a more complete and fair evaluation approach.
-<iframe src="assets/plot/means.html" width="900px" height="530px" frameborder="0">Your browser does not support iframes.</iframe>
+<iframe src="assets/plot/means.html" width="750px" height="530px" frameborder="0">Your browser does not support iframes.</iframe>
 
 # An ocean of breweries 
 
 In our case, we're going to rank a very wide range of breweries, as more 202 countries are taken into account in our ranking. From the small Filipino brewery Cebruery to the behemoth Stone Brewing, our aim is to tell you which breweries stand out from the crowd. Let's take a closer look at where our breweries come from. The map below shows the number of breweries in each country.  
 
-<iframe src="assets/plot/brewery_world_map.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
+<iframe src="assets/plot/brewery_world_map.html" width="750px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
 To get a clearer picture, let's look at the number of breweries per country in the form of a histogram.
 
-<iframe src="assets/plot/reviews_world_histogram.html" width="900px" height="800px" frameborder="0">Your browser does not support iframes.</iframe>
+<iframe src="assets/plot/reviews_world_histogram.html" width="750px" height="550px" frameborder="0">Your browser does not support iframes.</iframe>
 
 We can easily see that geographical areas such as North America and Europe are strongly represented, as the 10 countries with the most repertiorised breweries are in these two areas. The great champion is unequivocally the United States, since more than 30% of the breweries in this ranking are American. But let's not bury the rest of the world too quickly: Brazil has more than 400 breweries ready to take on the world, and who knows, will "Les brasseries du Tchad" come out on top?
 
 Now that we know where our breweries come from, we'd like to take their size into account. Not all breweries enjoy the same popularity. The visual below shows the number of reviews per brewery and per beer.
 
-<iframe src="assets/plot/reviews_beer_histogram.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
+<iframe src="assets/plot/reviews_beer_histogram.html" width="750px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
-<iframe src="assets/plot/reviews_breweries_histogram.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
+<iframe src="assets/plot/reviews_breweries_histogram.html" width="750px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
 What magnificent casts ! As we thought, a large proportion of breweries only receive a small number of reviews, while some reach more than 50,000 reviews. We can't let this go unpunished. To ensure that the rankings reflect the overall quality and consistency of the breweries, the elimination of those with fewer than 30 reviews means that we can focus on establishments with a proven track record and a larger customer base. All breweries with less than 30 reviews will therefore be excluded from our ranking. It is with great sorrow that we announce the end of the road for the Chadian brewery, which was only able to garner two reviews. It's sad but fair, so let's get on with the ranking!
 
@@ -45,14 +45,14 @@ Our ranking is based a weighted system, when we calculate the average score for 
 
 Let's not prolong the suspense any longer, here is the ranking of the 10 best breweries of all time:
 
-<iframe src="assets/plot/top10_alltime_weighted.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
+<iframe src="assets/plot/top10_alltime_weighted.html" width="750px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
 Congratulations to the Ecuadorian Doggerlander Brewing Company on its victory followed by the excellent Westvleteren Abdij St.Sixtus and finally the Brasserie Rochefort. 
 
 
 This ranking is based on more than 15 years of opinions, but as you can imagine this top 10 has changed a lot over the years. That's why we're offering you a year-by-year ranking. 
 
-<iframe src="assets/plot/top10_weight.html" width="900px" height="420px" frameborder="0">Your browser does not support iframes.</iframe>
+<iframe src="assets/plot/top10_weight.html" width="750px" height="420px" frameborder="0">Your browser does not support iframes.</iframe>
 
 So now we know that the best brewery in the year of Zinédine Zidane's headbutt in the World Cup final was Brauerei Zehendner Gmdh - what a relief! Are we done now ?
 
@@ -97,14 +97,15 @@ We observe that now the new rating system as much linked to the initial numerica
 # Which are the best breweries in the world ?
 According to our ranking system, the best breweries in the world elected by the people are not anymore the same. Sentiments change the ranking and new consumers could trust the objectivity of this innovative one. The real best breweries will not be disadvantaged anymore by extreme subjectivity.
 
-If you want to try the beers from the best breweries in the world follow the links:<br>
+If you want to try the beers from the best breweries in the world follow the links:
+<br>
 🏅[Doggerlander Brewing Company](https://www.ratebeer.com/brewers/doggerlander-brewing-company/18423/)<br>
 🥈[Abdij St. Sixtus - Westvleteren](https://www.ratebeer.com/brewers/abdij-st-sixtus-westvleteren/623/)<br>
 🥉[Neill & Ross](https://www.ratebeer.com/brewers/neill-ross/13189/)<br>
 
 Drink their beers, you will not be disappointed if you are a beer lover!
 
-<iframe src="assets/plot/top10_weight_new.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
+<iframe src="assets/plot/top10_weight_new.html" width="750px" height="420px" frameborder="0">Your browser does not support iframes.</iframe>
 
 \*Grades over the years should not be compared to each other since these values are calculated as the distance from the mean score of the year
 
