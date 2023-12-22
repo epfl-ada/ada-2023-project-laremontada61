@@ -41,7 +41,7 @@ Furthermore, we optimize our review process by standardizing polarity scores acr
 
 Summarily expressed in the formula:
 
-$$ final\_rating=(initial_rating+polarity)×(1−subjectivity) $$
+$$ \text{final\_rating}=(\text{initial\_rating}+polarity)×(1−subjectivity) $$
 
 The latest enhancement to this refined algorithm introduces a compensation factor 
 k
@@ -49,7 +49,7 @@ k, harmonizing the correlation of final scores along the dimensions of standardi
 
 Thus, the ultimate formula becomes:
 
-$$ final\_rating=(initial_rating+k×polarity)×(1−subjectivity) $$
+$$ \text{final\_rating}=(\text{initial\_rating}+k*polarity)×(1−subjectivity) $$
 
 #### 📈 Visualization - So what ? What should I drink tonight ?
 The final step of our pipeline is to visualize the results of our ranking system. We've created a [datastory](https://epfl-ada.github.io/ada-2023-project-laremontada61/) that allows you to see all the results of the pipeline. If you are not interested in justifications, statistics and bar plots head straight to the bottom of the page to sea beautilful world maps with a world ranking. These maps are made from custon GeoJson files, and with the use of [globe.io](globe.io)
