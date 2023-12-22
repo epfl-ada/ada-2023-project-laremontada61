@@ -41,7 +41,9 @@ Furthermore, we optimize our review process by standardizing polarity scores acr
 
 Summarily expressed in the formula:
 
-$$ \text{final_rating}=(\text{initial_rating}+polarity)×(1−subjectivity) $$
+\[
+\text{{final\_rating}} = (\text{{initial\_rating}} + \text{{polarity}}) \cdot (1-\text{{subjectivity}})
+\]
 
 The latest enhancement to this refined algorithm introduces a compensation factor 
 k
