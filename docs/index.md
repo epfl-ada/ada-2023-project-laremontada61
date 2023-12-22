@@ -102,6 +102,8 @@ According to our ranking system, the best breweries in the world elected by the 
 
 <img src="assets/plot/ranking_breweries_Top3_resize.png" width="700px" height="600px">
 
+<iframe src="assets/plot/ranking_breweries_Top3.html" width="900px" height="700px" frameborder="0">Your browser does not support iframes.</iframe>
+
 If you want to try the beers available in these breweries check out this links :
 [Doggerlander Brewing Company](https://www.ratebeer.com/brewers/doggerlander-brewing-company/18423/)<br>
 [Abdij St. Sixtus - Westvleteren](https://www.ratebeer.com/brewers/abdij-st-sixtus-westvleteren/623/)<br>
