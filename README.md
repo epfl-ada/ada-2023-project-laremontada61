@@ -19,9 +19,9 @@ The website can be found [here](https://epfl-ada.github.io/ada-2023-project-lare
 ### ❓ Research questions
 During this work, we will give an answer to those questions:
 
-- How to enrich the ranking systems with sentiment analysis ?
-- Are there any external factors that may influence rating ? (such as politics, economics, time of the year...)
-- Combining all of this, what is the best brewery in the world ?
+- How existing rating metrics can be used to rank the breweries over the world and over the years ?
+- Is it possible to create to enrich such ranking systems sentiment analysis ?
+- From which brewery should I buy a drink tonight ?
 
 ### 🎯 Methods
 In order to answer the research question and get to our goal, you can read hereafter the proposed pipeline:
