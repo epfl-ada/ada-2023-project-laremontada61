@@ -65,9 +65,9 @@ Commentary on evolution
 ## Is there a link for reviews' subjectivity with their polarity and their numerical ratings?
 We aim to examine the correlation between numerical ratings and subjectivity, as well as between polarity and subjectivity. Our hypothesis is rooted in the intuition that extreme subjectivity tends to yield extreme reviews or ratings. To refine our ranking system effectively, it's essential to assign more weight to objective opinions, ensuring a more equitable and balanced system.
 
-<iframe src="assets/img/Subjectivity_for_extreme_ratings.png" width="750px" height="420px" frameborder="0" style="position: relative">Means</iframe> 
+<iframe src="assets/img/Subjectivity_for_extreme_ratings.png" width="750px" height="420px" frameborder="0">Your browser does not support iframes.</iframe>
 
-<iframe src="assets/img/Subjectivity_for_extreme_polarities.png" width="750px" height="420px" frameborder="0" position="relative">Means</iframe>
+<iframe src="assets/img/Subjectivity_for_extreme_polarities.png" width="750px" height="420px" frameborder="0">Your browser does not support iframes.</iframe>
 
 The above plots show the box plots for the subjectivity of all the reviews (in blue), against the distribution of subjectivity for reviews with extreme polarities/ratings (for positive reviews (in green) the distribution of subjectivity for reviews with a polarity/rating above the computed maximum and for negative reviews (in red) below the computed min).
 
@@ -95,11 +95,11 @@ Normalement corr1 = corr2
 # Which are the best breweries in the world ?
 According to our ranking system, the best breweries in the world are the following (faut blablater plus) et surtout pas dire e que je dis faut que ce soit une story putain
 
-<iframe src="assets/plot/top10_alltime_weighted_new.html" width="900px" height="620px" frameborder="0" position="relative">Means</iframe>
+<iframe src="assets/plot/top10_alltime_weighted_new.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
 Oui oui faut aussi parler:
 
-<iframe src="assets/plot/top10_weight_new.html" width="900px" height="620px" frameborder="0" position="relative">Means</iframe>
+<iframe src="assets/plot/top10_weight_new.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
 # Conclusion
 
