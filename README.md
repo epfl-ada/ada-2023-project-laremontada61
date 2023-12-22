@@ -7,7 +7,7 @@ To setup this `virtual environment` please head to [SETUP.md](https://github.com
 The Dataset that will be used in the frame of this project is too large to be stored on GitHub. Therefore we created a [Google Drive](https://drive.google.com/file/d/1wIIfhQDdF5lH42bKQ3pLoStu_Wem2rGE/view?usp=drive_link) where the original Dataset is present as well as our pre-processed `.zip` files.
 
 ### 📖 Abstract
-In the wide world of hops, cereals and aperitifs with friends, LaRemontADA is on a quest towards making a bebrewery ranking system combining the precision of figures and the richness of prose.
+In the wide world of hops, cereals and aperitifs with friends, LaRemontADA is on a quest towards making a brewery ranking system combining the precision of figures and the richness of prose.
 
 Using the [BeerReviews](https://drive.google.com/drive/folders/1Wz6D2FM25ydFw_-41I9uTwG9uNsN4TCF?usp=sharing) dataset that contains a variety of beer ratings from 2 different websites together with sentiment analysis tools, our goal is to enhance the already existing rating system to be able to determine the world's best beer. This determination is based on a detailed analysis of the existing ratings throughout the world and across time.
 
@@ -27,7 +27,7 @@ During this work, we will give an answer to those questions:
 In order to answer the research question formulated above and get to our goal, you can read hereafter the proposed pipeline:
 
 #### 📊 Numerical ranking system - How to use the existong metrics ?
-The BeerReviews dataset consists of a large number of reviews. Each review formulated with a wide range of metrics that can be either numerical or textual. The first stepp focuses on the numerical features. With these various scalar ratings our goal is to create a ranking of the best breweries. Two different numerical brewery ranking systems were developped.
+The BeerReviews dataset consists of a large number of reviews. Each review formulated with a wide range of metrics that can be either numerical or textual. The first step focuses on the numerical features. With these various scalar ratings our goal is to create a ranking of the best breweries. Two different numerical brewery ranking systems were developped.
 The first on is a weighted average of the different rating metrics values.  To calculate this ranking only a portion of the beers and breweries that appear in the dataset are kept. This portion is statistically determined with a _Central Limit Theorem (CLT)_: the breweries that have less than `n=30` reviews are filtered since they cannot be considered statistically significant with respect to the _CTL_. By doing so, we are able to give more importance to the breweries that are rated more often, eventually leading to more significant. This ranking methods gave a first sample of results and is called the _Weighted Ranking Method_.
 
 The second ranking method called _Quality Ranking Method (QRM)_ is obviously focused towards quality. QRM aims to address a potential limitation in the representation of brewery quality. In the first ranking, a brewery with a single highly-rated and widely-consumed beer could obtain a favorable rating, despite the possibility that its other beers may be less well-received. This method seeks to overcome this limitation by focusing solely on the quality of beers, irrespective of their popularity or quantity of reviews. In this approach, a brewery's ranking is calculated by averaging the ratings of its beers, with no consideration given to their frequency of review. However, to enhance statistical significance, beers with fewer than 4 reviews are excluded from the calculation. This ranking method provides a more nuanced assessment of brewery quality, placing emphasis on the overall quality of different beers within a brewery's portfolio rather than the sheer volume of reviews.
@@ -71,7 +71,7 @@ The final step of our pipeline is to visualize the results of our ranking system
 - Week 11:
   - Milestone: Processing pipeline of the textual reviews complete. Validation of the ranking augmentation process
 - Week 12:
-  - Creation of the website for datastories, brainstorm and validation of the visuqalization methods.
+  - Creation of the website for datastories, brainstorm and validation of the visualization methods.
 - Week 13:
   - Merging of the processing pipeline and the visualization methods and validation on a small portion of the dataset.
 - Week 14:
