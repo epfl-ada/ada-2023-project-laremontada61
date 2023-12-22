@@ -10,7 +10,7 @@ title: LaRemontADA61
 </div>
 <div class="column">
     <img src="assets/img/JJZ.png" alt="image2" style="width:100%">
-    <p><strong>Julien Jeandroz</strong><br> Data Analyst </p>
+    <p><strong>Julien Jeandroz</strong><br> Data Analyst NLP</p>
 </div>
 <div class="column">
     <img src="assets/img/TCZ.png" alt="image2" style="width:100%">
