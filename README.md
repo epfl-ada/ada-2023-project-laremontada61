@@ -55,7 +55,7 @@ $$ rating_{final}=(rating_{initial}+k×polarity)×(1−subjectivity) $$
 The final step of our pipeline is to visualize the results of our ranking system. We've created a [datastory](https://epfl-ada.github.io/ada-2023-project-laremontada61/) that allows you to see all the results of the pipeline. If you are not interested in justifications, statistics and bar plots head straight to the bottom of the page to sea beautilful world maps with a world ranking. These maps are made from custon GeoJson files, and with the use of [globe.io](globe.io)
 
 
-### ⏳ Timeline (Dynamic)
+### ⏳ Timeline
 **Done for P2 (17/11/23):**
 - Beginning to Week 9:
   - Pre-processing: Subdivided original .tar.gz files into smaller one to be able to load them into dataframes. A sampling of the resulting df was necessary due to their size. Size was reduced by randomly selecting element from them.
@@ -65,26 +65,26 @@ The final step of our pipeline is to visualize the results of our ranking system
     - Textual reviews distribution: Analysis of the words' distribution in the both websites with count of the most used words and expressions before and after a processing on all the sentences.
     - Sentiment Analysis: Analysis of the sentiment polarity in the different review texts and the comments' subjectivity to have a better understanding of the influence of some ratings.
 
-**To be done for P3 (from 18/11/23 to 22/12/23):** 
+**Done for P3 (22/12/23):** 
 - Week 10:
-  - Milestone: identify extreme users with their high polarity comments and find a fair way to ponderate their ratings.
+  - Milestone: Validation of the numerical ranking methods. Beginning of the research for the NLP of the textual reviews
 - Week 11:
-  - Milestone: Check adjectives used to describe best beers of each season or each geographic areas to be able to propose other beers in function of the parameters with the same adjectives.
+  - Milestone: Processing pipeline of the textual reviews complete. Validation of the ranking augmentation process
 - Week 12:
-  - To be determined
+  - Creation of the website for datastories, brainstorm and validation of the visuqalization methods.
 - Week 13:
-  - To be determined
+  - Merging of the processing pipeline and the visualization methods and validation on a small portion of the dataset.
 - Week 14:
-  - Documentation: Full documentation of the pipeline & edition of the website.
+  - Final running of the pipeline, creation of the datastory, minor bug corrections. Documentation of the whole process and structuration of the GitHub repository.
 
-#### 🤝 Team organization (To be re-specified after P2)
+#### 🤝 Team organization
 | Member        | Task          |
 | ------------- | ------------- | 
-| Maxime      | Sentiment analysis, visualizations |
-| Julien      | Sentiment analysis, visualizations |
-| Charles     | Statistical analysis, visualizations|
-| Tanguy D.   | Statistical analysis, visualizations|
-| Tanguy C.   | Data pre-processing, Data enriching |
+| Maxime      | Data-scientist, NLP |
+| Julien      | Data-scientist, NLP |
+| Charles     | Data-analyst, Statistics-Visualizations|
+| Tanguy D.   | Back-end web developper, Visualizations|
+| Tanguy C.   | Data-analyst, Pre-processing |
 
 
 
