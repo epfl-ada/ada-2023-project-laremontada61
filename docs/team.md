@@ -3,25 +3,37 @@ layout: page
 title: LaRemontADA61
 ---
 # Meet the team
-<div class="row">
-<div class="column">
-    <img src="assets/img/TUN.png" alt="image1" style="width:100%">
-    <p><strong>Tanguy Desjardin</strong><br> Web developper</p>
-</div>
-<div class="column">
-    <img src="assets/img/JJZ.png" alt="image2" style="width:100%">
-    <p><strong>Julien Jeandroz</strong><br> Data Analyst NLP</p>
-</div>
-<div class="column">
-    <img src="assets/img/TCZ.png" alt="image2" style="width:100%">
-    <p><strong>Tanguy Cedoz</strong><br> Data Explorer </p>
-</div>
-<div class="column">
-    <img src="assets/img/MLE.png" alt="image1" style="width:100%">
-    <p><strong>Maxime Lelièvre</strong><br> Data Explorer</p>
-</div>
-<div class="column">
-    <img src="assets/img/CCT.png" alt="image2" style="width:100%">
-    <p><strong>Charles Cantenot</strong><br> Data Analyst</p>
-</div>
-</div>
+<br>
+
+<ul class="img_container">
+         <li>
+            <img src="../assets/img/TUN.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
+            Tanguy DESJARDIN, Back-end web developper, Visualizations.
+            <a href="https://github.com/guytangzz">@guytangzz</a>
+            <br/><br/>
+         </li>
+         <li>
+            <img src="../assets/img/TUN.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
+            Salomé BAUP, Master student in Life Sciences Engineering.
+            <a href="https://github.com/salome-baup">@salome-baup</a>
+            <br/><br/>
+         </li>
+         <li>
+            <img src="../assets/img/TUN.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
+            Salomé BAUP, Master student in Life Sciences Engineering.
+            <a href="https://github.com/salome-baup">@salome-baup</a>
+            <br/><br/>
+         </li>
+         <li>
+            <img src="../assets/img/TUN.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
+            Salomé BAUP, Master student in Life Sciences Engineering.
+            <a href="https://github.com/salome-baup">@salome-baup</a>
+            <br/><br/>
+         </li>
+         <li>
+            <img src="../assets/img/TUN.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
+            Salomé BAUP, Master student in Life Sciences Engineering.
+            <a href="https://github.com/salome-baup">@salome-baup</a>
+            <br/><br/>
+         </li>
+      </ul>
