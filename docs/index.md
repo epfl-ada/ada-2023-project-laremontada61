@@ -20,28 +20,28 @@ Understanding the fairness of ratings is crucial to ensure fairness among produc
 Now that we've standardised our scores, we can finally rank our breweries. We will first rank them based the numerical grade their beers obtained, but how to do it?
 ## Where do they come from?
 
-<iframe src="assets/plot/brewery_world_map.html" width="800px" height="620px" frameborder="0" position="relative">Means</iframe>
+<iframe src="assets/plot/brewery_world_map.html" width="800px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
-<iframe src="assets/plot/reviews_world_histogram.html" width="800px" height="620px" frameborder="0" position="relative">Means</iframe>
+<iframe src="assets/plot/reviews_world_histogram.html" width="800px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
 Firstly, we associate each brewery with its corresponding beers. This gives us a set of reviews per brewery. The number of reviews per brewery is very varied, as we can see in the figure below, a large proportion of breweries have few reviews. We consider that a brewery with fewer than 30 reviews in total cannot be included in the ranking because we want the ranking to be based on a significant number of reviews. With this threshold we keep n breweries and remove m. We can also see below the distribution of the number of reviews per beer, which will interest us later.
 
 
-<iframe src="assets/plot/reviews_beer_histogram.html" width="800px" height="620px" frameborder="0" position="relative">Means</iframe>
+<iframe src="assets/plot/reviews_beer_histogram.html" width="800px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
-<iframe src="assets/plot/top_most_rated_breweries.html" width="800px" height="620px" frameborder="0" position="relative">Means</iframe>
+<iframe src="assets/plot/top_most_rated_breweries.html" width="800px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
-<iframe src="assets/plot/reviews_breweries_histogram.html" width="800px" height="620px" frameborder="0" position="relative">Means</iframe>
+<iframe src="assets/plot/reviews_breweries_histogram.html" width="800px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
 We have now filtered our breweries to keep only those with more than 30 reviews, let’s rank them! The first system is a weighted ranking, when we calculate the average score for a brewery from the scores obtained by its beers, we weight the importance of each beer by the number of reviews it has received. This rating system isn’t sensitive to beers with few reviews, which is why we have kept all the brewery's beers each time. Using this rating system, we have produced two rankings. 
 
 This first ranking corresponds to the 10 best breweries of all time according to this ranking system.
 
-<iframe src="assets/plot/top10_alltime_weighted.html" width="800px" height="620px" frameborder="0" position="relative">Means</iframe>
+<iframe src="assets/plot/top10_alltime_weighted.html" width="750px" height="420px" frameborder="0">Your browser does not support iframes.</iframe>
 
 We would also like to visualize this ranking by year by calculating the top 10 for each year. This is shown in the visual.
 
-<iframe src="assets/plot/top10_weight.html" width="800px" height="400px" frameborder="0" position="relative">Means</iframe>
+<iframe src="assets/plot/top10_weight.html" width="750px" height="420px" frameborder="0">Your browser does not support iframes.</iframe>
 
 However, this classification method can be questioned in the way it weights its beers. Let's imagine a brewery that produces a very popular beer, which is highly consumed and rated, and which also gets very good ratings. On the other hand, this brewery produces other beers that are not as good, and which are therefore rated less highly and drunk less. With the first rating system, this brewery will be judged as very good, but is it really so, knowing that only one of its beers can be considered good? We believe that a brewery can also be assessed on the average quality of its beers without taking into account whether or not they are popular. This classification is possible thanks to the second system. 
 
@@ -65,7 +65,7 @@ Commentary on evolution
 ## Is there a link for reviews' subjectivity with their polarity and their numerical ratings?
 We aim to examine the correlation between numerical ratings and subjectivity, as well as between polarity and subjectivity. Our hypothesis is rooted in the intuition that extreme subjectivity tends to yield extreme reviews or ratings. To refine our ranking system effectively, it's essential to assign more weight to objective opinions, ensuring a more equitable and balanced system.
 
-<iframe src="assets/plot/Subjectivity_for_extreme_ratings.html" width="750px" height="420px" frameborder="0" position="relative">Means</iframe> 
+<iframe src="assets/plot/Subjectivity_for_extreme_ratings.html" width="750px" height="420px" frameborder="0" style="position: relative">Means</iframe> 
 
 <iframe src="assets/plot/Subjectivity_for_extreme_polarities.html" width="750px" height="420px" frameborder="0" position="relative">Means</iframe>
 
