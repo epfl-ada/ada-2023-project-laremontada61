@@ -97,9 +97,11 @@ We observe that now the new rating system as much linked to the initial numerica
 # Which are the best breweries in the world ?
 According to our ranking system, the best breweries in the world elected by the people are not anymore the same. Sentiments change the ranking and new consumers could trust the objectivity of this innovative one. The real best breweries will not be disadvantaged anymore by extreme subjectivity.
 
-<img src="assets/img/ranking_breweries_Top3.png" width="700px" height="600px">
+<br>
 🏅Doggerlander Brewing Company
+<br>
 🥈Westveteren Abdij St.Sixtus
+<br>
 🥉Neil&Ross
 
 If you want to try the beers available in these breweries check out this links :
