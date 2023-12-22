@@ -11,55 +11,55 @@ In today's era, we have the ability to rate a wide range of things, such as rest
 The problem intensifies when certain products are either unfairly favored or disadvantaged due to the subjectivity of reviewers. This undermines the credibility of the ranking system, as products not reviewed by these subjective individuals might be unfairly influenced in either a positive or negative manner. 
 In summary, the current approach of relying solely on numerical ratings and extensive textual reviews poses challenges for consumers in obtaining a clear and unbiased picture of a product.
 
-Understanding the fairness of ratings is crucial to ensure fairness among products. Our aim is to create a fair beer rating system that can be applied to different rating systems. We'll explore how the subjective nature of reviews affects both the sentiment (polarity) and numerical ratings of beers, revealing genuine differences in diverse reviews. This investigation will use thorough statistical tests. The result will be a new ranking system that combines written reviews and numerical ratings, offering a more complete and fair evaluation approach.
+Understanding the fairness of ratings is crucial to ensure equity among products. Our aim is to create a fair beer rating system that can be applied to different rating systems. We'll explore how the subjective nature of reviews affects both the sentiment (polarity) and numerical ratings of beers, revealing genuine differences in diverse reviews. This investigation will use thorough statistical tests. The result will be a new ranking system that combines written reviews and numerical ratings, offering a more complete and fair evaluation approach.
 <iframe src="assets/plot/means.html" width="900px" height="530px" frameborder="0">Your browser does not support iframes.</iframe>
 
+# An ocean of breweries 
 
-# Let's rank them 
-
-Now that we've standardised our scores, we can finally rank our breweries. We will first rank them based the numerical grade their beers obtained, but how to do it?
-## Where do they come from?
+In our case, we're going to rank a very wide range of breweries, as more 202 countries are taken into account in our ranking. From the small Filipino brewery Cebruery to the behemoth Stone Brewing, our aim is to tell you which breweries stand out from the crowd. Let's take a closer look at where our breweries come from. The map below shows the number of breweries in each country.  
 
 <iframe src="assets/plot/brewery_world_map.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
+To get a clearer picture, let's look at the number of breweries per country in the form of a histogram.
+
 <iframe src="assets/plot/reviews_world_histogram.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
-Firstly, we associate each brewery with its corresponding beers. This gives us a set of reviews per brewery. The number of reviews per brewery is very varied, as we can see in the figure below, a large proportion of breweries have few reviews. We consider that a brewery with fewer than 30 reviews in total cannot be included in the ranking because we want the ranking to be based on a significant number of reviews. With this threshold we keep n breweries and remove m. We can also see below the distribution of the number of reviews per beer, which will interest us later.
+We can easily see that geographical areas such as North America and Europe are strongly represented, as the 10 countries with the most repertiorised breweries are in these two areas. The great champion is unequivocally the United States, since more than 30% of the breweries in this ranking are American. But let's not bury the rest of the world too quickly: Brazil has more than 400 breweries ready to take on the world, and who knows, will "Les brasseries du Tchad" come out on top?
 
+Now that we know where our breweries come from, we'd like to take their size into account. Not all breweries enjoy the same popularity. The visual below shows the number of reviews per brewery and per beer.
 
 <iframe src="assets/plot/reviews_beer_histogram.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
 <iframe src="assets/plot/reviews_breweries_histogram.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
+What magnificent casts ! As we thought, a large proportion of breweries only receive a small number of reviews, while some reach more than 50,000 reviews. We can't let this go unpunished. To ensure that the rankings reflect the overall quality and consistency of the breweries, the elimination of those with fewer than 30 reviews means that we can focus on establishments with a proven track record and a larger customer base. All breweries with less than 30 reviews will therefore be excluded from our ranking. It is with great sorrow that we announce the end of the road for the Chadian brewery, which was only able to garner two reviews. It's sad but fair, so let's get on with the ranking!
+
+
+# Let's rank them 
+
+We will first rank them based the numerical grade their beers obtained, but how to do it?
+
+## Where do they come from?
+
+
 <iframe src="assets/plot/top_most_rated_breweries.html" width="900px" height="900px" frameborder="0">Your browser does not support iframes.</iframe>
 
-We have now filtered our breweries to keep only those with more than 30 reviews, let’s rank them! The first system is a weighted ranking, when we calculate the average score for a brewery from the scores obtained by its beers, we weight the importance of each beer by the number of reviews it has received. This rating system isn’t sensitive to beers with few reviews, which is why we have kept all the brewery's beers each time. Using this rating system, we have produced two rankings. 
 
-This first ranking corresponds to the 10 best breweries of all time according to this ranking system.
+Our ranking is based a weighted system, when we calculate the average score for a brewery from the scores obtained by its beers, we weight the importance of each beer by the number of reviews it has received. This rating system isn’t sensitive to beers with few reviews, which is why we have kept all the brewery's beers each time. 
+
+Let's not prolong the suspense any longer, here is the ranking of the 10 best breweries of all time:
 
 <iframe src="assets/plot/top10_alltime_weighted.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
-We would also like to visualize this ranking by year by calculating the top 10 for each year. This is shown in the visual.
+Congratulations to the Ecuadorian Doggerlander Brewing Company on its victory followed by the excellent Westvleteren Abdij St.Sixtus and finally the Brasserie Rochefort. 
+
+
+This ranking is based on more than 15 years of opinions, but as you can imagine this top 10 has changed a lot over the years. That's why we're offering you a year-by-year ranking. 
 
 <iframe src="assets/plot/top10_weight.html" width="900px" height="420px" frameborder="0">Your browser does not support iframes.</iframe>
 
-However, this classification method can be questioned in the way it weights its beers. Let's imagine a brewery that produces a very popular beer, which is highly consumed and rated, and which also gets very good ratings. On the other hand, this brewery produces other beers that are not as good, and which are therefore rated less highly and drunk less. With the first rating system, this brewery will be judged as very good, but is it really so, knowing that only one of its beers can be considered good? We believe that a brewery can also be assessed on the average quality of its beers without taking into account whether or not they are popular. This classification is possible thanks to the second system. 
+So now we know that the best brewery in the year of Zinédine Zidane's headbutt in the World Cup final was Brauerei Zehendner Gmdh - what a relief! Are we done now ?
 
-From now on, a brewery's average rating will not be obtained by weighting the importance of its beers by the number of reviews they have received. This ranking therefore reflects the quality of the brewery's range of beers. However, this ranking is very sensitive to beers with fewer reviews, as we don't want a beer with just one review to have a strong influence on the brewery's average, we filtered the beers to keep only those with more than 5 reviews. Similar to the first system, we have produced an overall ranking. Here are the results of this general ranking for the two rating systems. We can see that the ranking has changed significantly (describe the changes)
-
-Plot compare ranking (Du coup non je pense)
-
-Here is the evolution of the top 10 with this system over the years.
-
-
-Plot evolution quality ranking  (pas sur non plus)
-
-
-We have our champions, _,_,_ corresponds to our 3 best breweries for the first rating system. We would now like to look at the evolution of the scores obtained by these three breweries over time.
-
-Plot evolution (pas prêt ce plot non ?)
-
-Commentary on evolution 
 # How to take into account the sentiment in the textual reviews ?
 
 ## Is there a link for reviews' subjectivity with their polarity and their numerical ratings?
@@ -75,8 +75,8 @@ The above plots show the box plots for the subjectivity of all the reviews (in b
 The extent of the overlap of the boxplots gives a first glimpse of the degree of similarity between the distributions. To check if the difference is statistically significant, as the distribution is not normally distributed a non-parametric test such as the Mann-Whitney U test is more suited.
 
 #### Subjectivity for extreme polarities
-Here all the boxplots overlap so nothing can be said over the significance of the difference between the distribution of ratings for all the reviews and the extremly negative reviews. Furthermore, since the boxplot for positive reviews is not displayed it means that the maximum computed is higher than the actual values, hence no outliers are present for the polarity.
-When performing the Mann_Whitney U test, the p-value is equal to 0.0 so the difference might be significant. But the difference seems to be really small, so extreme negative polarities seems to have a subjectivity that might be acceptable
+Here all the boxplots overlap so nothing can be said over the significance of the difference between the distribution of ratings for all the reviews and the extremely negative reviews. Furthermore, since the boxplot for positive reviews is not displayed it means that the maximum computed is higher than the actual values, hence no outliers are present for the polarity.
+When performing the Mann_Whitney U test, the p-value is equal to 0.0 so the difference might be significant. But the difference seems to be really small, so extreme negative polarities seems to have a subjectivity that might be acceptable.
 
 #### Subjectivity for extreme ratings
 On the other hand there seems to be more link between subjectivity and extreme polarities. While the negative distribution follows the same pattern as for the polarities (with p-value of 3.04e-235) with a potential small significantly smaller median, the extremly positive reviews show some interesting result.
@@ -88,8 +88,8 @@ Before incorporating textual reviews for different beers into the ranking system
 | Features           | Initial rating (standardized) |
 | Polarity (standardized) |0.35|
 
-Based on our results, the correlation between polarity and numerical ratings appears to be relatively positive but weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews, with the sentiment analysis, and numerical ratings are crucial for defining the most accurate ranking. Consequently, we have developed a formulation where equal importance is attributed to both these features.
-Our formulation is: New Rating= (Standardized Rating + 0.94 x Standardized Polarity Score )(1- Subjectivity Score).
+Based on our results, the correlation between polarity and numerical ratings appears to be relatively positive but weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews, with the sentiment analysis, and numerical ratings are crucial for defining the most accurate ranking. Consequently, we have developed a formulation where equal importance is attributed to both these features.Our formulation is: 
+*New Rating= (Standardized Rating + 0.94 x Standardized Polarity Score )(1- Subjectivity Score)*
 
 
 | Features           | Initial rating (standardized) | Polarity (standardized) |
