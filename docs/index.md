@@ -84,7 +84,8 @@ Before incorporating textual reviews for different beers into the ranking system
 | Features           | Initial rating (standardized) |
 | Polarity (standardized) |0.35|
 
-Based on our results, the correlation between polarity and numerical ratings appears to be relatively positive but weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews, with the sentiment analysis, and numerical ratings are crucial for defining the most accurate ranking. Consequently, we have developed a formulation where equal importance is attributed to both these features.Our formulation is: 
+Based on our results, the correlation between polarity and numerical ratings appears to be relatively positive but weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews, with the sentiment analysis, and numerical ratings are crucial for defining the most accurate ranking. Consequently, we have developed a formulation where equal importance is attributed to both these features.
+Our formulation is: 
 *New Rating= (Standardized Rating + 0.94 x Standardized Polarity Score )(1- Subjectivity Score)*
 
 
@@ -98,8 +99,6 @@ According to our ranking system, the best breweries in the world elected by the 
 
 <img src="assets/img/ranking_breweries_Top3_resize.png" width="700px" height="600px">
 
-<img src="assets/img/ranking_breweries_Top3.svg" width="700px" height="600px">
-
 If you want to try the beers available in these breweries check out this links :
 [Doggerlander Brewing Company](https://www.ratebeer.com/brewers/doggerlander-brewing-company/18423/)<br>
 [Abdij St. Sixtus - Westvleteren](https://www.ratebeer.com/brewers/abdij-st-sixtus-westvleteren/623/)<br>
@@ -108,6 +107,8 @@ If you want to try the beers available in these breweries check out this links :
 So the best breweries around the world are the ones depicted in the podium. Drink their beers, you will not be disappointed if you are a beer lover!
 
 <iframe src="assets/plot/top10_weight_new.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
+
+\*Grades over the years should not be compared to each other since these values are calculated as the distance from the mean score of the year
 
 If you want to see the evolution of top 10 across the years, comparable only within years, you can take a look here. Maybe it can help you to find a millesime child's birth year.
 
