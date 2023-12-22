@@ -4,7 +4,7 @@
 Although all of our notebooks are pre-runed, we would recommend you to create a `virtual environment` to load all the necessary libraries. 
 To setup this `virtual environment` please head to [SETUP.md](https://github.com/epfl-ada/ada-2023-project-laremontada61/main/SETUP.md). 
 
-The Dataset that will be used in the frame of this project is too large to be stored on GitHub. Therefore we created a [Google Drive](https://drive.google.com/file/d/1wIIfhQDdF5lH42bKQ3pLoStu_Wem2rGE/view?usp=drive_link) where the original Dataset is present as well as our pre-processed `.zip` files.
+The Dataset that will be used in the frame of this project is too large to be stored on GitHub. Therefore we created a [Google Drive](https://drive.google.com/drive/u/0/folders/0AEWeTmer8i1MUk9PVA) where the original Dataset is present as well as our pre-processed `.zip` files.
 
 ### 📖 Abstract
 In the wide world of hops, cereals and aperitifs with friends, LaRemontADA is on a quest towards making a brewery ranking system combining the precision of figures and the richness of prose.

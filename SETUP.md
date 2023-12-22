@@ -19,7 +19,7 @@ Create a folder that will contain our pre-processed dataset files:
 mkdir dataset_BeerReviews
 ```
 
-Download the files from [here](https://drive.google.com/file/d/1wIIfhQDdF5lH42bKQ3pLoStu_Wem2rGE/view?usp=drive_link), put them in it and unzip them.
+Download the files from [here](https://drive.google.com/drive/u/0/folders/0AEWeTmer8i1MUk9PVA), put them in it and unzip them.
 
 Move into the cloned repo:
 ```bash
