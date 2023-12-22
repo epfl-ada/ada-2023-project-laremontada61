@@ -77,33 +77,42 @@ The extent of the overlap of the boxplots gives a first glimpse of the degree of
 
 ## Subjectivity for extreme polarities
 
-Before incorporating textual reviews for different beers into the ranking system, it's crucial to check if the sentiment polarity from these reviews correlates with numerical ratings. By understanding this relationship, we aim to enhance our ranking mechanism. To delve deeper into this association, we aligned the two features and conducted a thorough correlation analysis.
+
+Before incorporating textual reviews for different beers into the ranking system, it's crucial to check if the sentiment polarity from these reviews correlates with numerical ratings. By understanding this relationship, we aim to enhance our ranking mechanism. To delve deeper into this association, we aligned the two features and conducted a Pearson's correlation analysis.
 
 | Features           | Initial rating (standardized) |
-| Polarity (standardized) |xxx|
+| Polarity (standardized) |0.35|
 
-Based on our findings, the correlation between polarity and numerical ratings appears to be relatively weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews, with the sentiment analysis, and numerical ratings are crucial for defining the most accurate ranking. Consequently, we plan to devise a formulation where equal importance is attributed to both these features.
-
-
-EXPLAIN THE SCORING METHOD BLABLABLA 
+Based on our results, the correlation between polarity and numerical ratings appears to be relatively positive but weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews, with the sentiment analysis, and numerical ratings are crucial for defining the most accurate ranking. Consequently, we have developed a formulation where equal importance is attributed to both these features.
+Our formulation is: New Rating= (Standardized Rating + 0.94 x Standardized Polarity Score )(1- Subjectivity Score).
 
 
 | Features           | Initial rating (standardized) | Polarity (standardized) |
-| Final rating (standardized) |corr1| corr2 |
+| Final rating (standardized) |0.79| 0.79 |
 
-Normalement corr1 = corr2
+We observe that now the new rating system as much linked to the initial numerical ratings as polarity score. The subjectivity weights the importance of the review, then extreme users have less weighted reviews. Indeed, as we have depicted before there are more subjective in their reviews thus they make the initital ranking less fair.
+
 # Which are the best breweries in the world ?
-According to our ranking system, the best breweries in the world are the following (faut blablater plus) et surtout pas dire e que je dis faut que ce soit une story putain
+According to our ranking system, the best breweries in the world elected by the people are not anymore the same. Sentiments change the ranking and new consumers could trust the objectivity of this innovative one. The real best breweries will not be disadvantaged anymore by extreme subjectivity.
 
-<iframe src="assets/plot/top10_alltime_weighted_new.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
+<iframe src="assets/plot/ranking_breweries_Top3.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
-Oui oui faut aussi parler:
+So the best breweries around the world are the ones depicted in the podium. Drink their beers, you will not be disappointed if you are a beer lover!
 
 <iframe src="assets/plot/top10_weight_new.html" width="900px" height="620px" frameborder="0">Your browser does not support iframes.</iframe>
 
+If you want to see the evolution of top 10 across the years, comparable only within years, you can take a look here. Maybe it can help you to find a millesime child's birth year.
+
+
 # Conclusion
 
-# Summarty: Wanna go out tonight ? Check what to order 🌍
+This innovative ranking system is more accurate than a ranking system only based on numerical ratings. It could create a path to a great improvements in rankings in many domains.
+This can be improved by a better sentiment analysis model but this is already a good way to feel the other people's sentiments.
+Now, we invite you to try beers and provide feedback to create a ranking that truly understands people's preferences.
+If you are travelling and want to try a new good beer in the country we have crafted you the backpacker's guide to beer!!!
+
+
+# Summary: Wanna go out tonight ? Check what to order 🌍
 <br>
 <div style="display: flex; justify-content: space-between;">
     <iframe src="assets/html/map_basis.html" width="50%" height="380px" frameborder="0" position="relative" style="border-radius: 20px;">Globe</iframe>
