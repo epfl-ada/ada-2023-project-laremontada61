@@ -13,27 +13,27 @@ title: LaRemontADA61
             <br/><br/>
          </li>
          <li>
-            <img src="../assets/img/TUN.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
-            Salomé BAUP, Master student in Life Sciences Engineering.
-            <a href="https://github.com/salome-baup">@salome-baup</a>
+            <img src="../assets/img/JJZ.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
+            Julien JEANDROZ, Data-scientist, NLP.
+            <a href="https://github.com/julienjeandroz">@julienjeandroz</a>
             <br/><br/>
          </li>
          <li>
-            <img src="../assets/img/TUN.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
-            Salomé BAUP, Master student in Life Sciences Engineering.
-            <a href="https://github.com/salome-baup">@salome-baup</a>
+            <img src="../assets/img/TCZ.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
+            Tanguy CEDOZ, Data-analyst, Pre-processing.
+            <a href="https://github.com/Tanguy-ced">@Tanguy-ced</a>
             <br/><br/>
          </li>
          <li>
-            <img src="../assets/img/TUN.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
-            Salomé BAUP, Master student in Life Sciences Engineering.
-            <a href="https://github.com/salome-baup">@salome-baup</a>
+            <img src="../assets/img/MLE.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
+            Maxime LELIEVRE, Data-scientist, NLP.
+            <a href="https://github.com/Maximelel">@Maximelel</a>
             <br/><br/>
          </li>
          <li>
-            <img src="../assets/img/TUN.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
-            Salomé BAUP, Master student in Life Sciences Engineering.
-            <a href="https://github.com/salome-baup">@salome-baup</a>
+            <img src="../assets/img/CCT.png" alt="Hungry" width="100" height="100" style="border-radius: 10px;" >
+            Charles CANTENOT, Data-analyst, Statistics-Visualizations.
+            <a href="https://github.com/CharlesCantenot">@CharlesCantenot</a>
             <br/><br/>
          </li>
       </ul>
