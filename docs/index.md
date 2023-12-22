@@ -85,7 +85,7 @@ Before incorporating textual reviews for different beers into the ranking system
 | Polarity (standardized) |0.35|
 
 Based on our results, the correlation between polarity and numerical ratings appears to be relatively positive but weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews, with the sentiment analysis, and numerical ratings are crucial for defining the most accurate ranking. Consequently, we have developed a formulation where equal importance is attributed to both these features.
-Our formulation is: 
+<br>Our formulation is:<br>
 *New Rating= (Standardized Rating + 0.94 x Standardized Polarity Score )(1- Subjectivity Score)*
 
 
