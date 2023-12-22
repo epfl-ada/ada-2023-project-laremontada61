@@ -84,7 +84,8 @@ Before incorporating textual reviews for different beers into the ranking system
 | Features           | Initial rating (standardized) |
 | Polarity (standardized) |0.35|
 
-Based on our results, the correlation between polarity and numerical ratings appears to be relatively positive but weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews, with the sentiment analysis, and numerical ratings are crucial for defining the most accurate ranking. Consequently, we have developed a formulation where equal importance is attributed to both these features.Our formulation is: 
+Based on our results, the correlation between polarity and numerical ratings appears to be relatively positive but weak. This suggests that without considering textual reviews, we overlook significant information. We believe that both textual reviews, with the sentiment analysis, and numerical ratings are crucial for defining the most accurate ranking. Consequently, we have developed a formulation where equal importance is attributed to both these features. 
+Our formulation is:
 *New Rating= (Standardized Rating + 0.94 x Standardized Polarity Score )(1- Subjectivity Score)*
 
 
@@ -96,9 +97,7 @@ We observe that now the new rating system as much linked to the initial numerica
 # Which are the best breweries in the world ?
 According to our ranking system, the best breweries in the world elected by the people are not anymore the same. Sentiments change the ranking and new consumers could trust the objectivity of this innovative one. The real best breweries will not be disadvantaged anymore by extreme subjectivity.
 
-<img src="assets/img/ranking_breweries_Top3_resize.png" width="700px" height="600px">
-
-<img src="assets/img/ranking_breweries_Top3.svg" width="700px" height="600px">
+<img src="assets/img/ranking_breweries_Top3.svg" width="800px" height="650px">
 
 If you want to try the beers available in these breweries check out this links :
 [Doggerlander Brewing Company](https://www.ratebeer.com/brewers/doggerlander-brewing-company/18423/)<br>
